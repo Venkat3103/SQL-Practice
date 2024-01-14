@@ -8,3 +8,6 @@ SUM(CASE WHEN MOD(rownum,2)=0 THEN measurement_value END) as even_sum
 FROM x
 GROUP BY CAST(measurement_time as date)
 ORDER BY measurement_day;
+
+-- https://datalemur.com/questions/odd-even-measurements
+-- Google - Medium
